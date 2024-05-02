@@ -19,7 +19,7 @@ const Header = ({ setSearchResults }) => {
 
   const getUsernameFromCookies = () => {
     const allCookies = document.cookie.split('; ');
-    const usernameCookie = allCookies.find(cookie => cookie.startsWith('username='));fjfdsklfjskjdkf
+    const usernameCookie = allCookies.find(cookie => cookie.startsWith('username='));
     return usernameCookie ? decodeURIComponent(usernameCookie.split('=')[1]) : '';
   };
 
